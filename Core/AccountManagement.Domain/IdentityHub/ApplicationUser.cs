@@ -1,6 +1,8 @@
-﻿namespace AccountManagement.Domain.IdentityHub
+﻿using AccountManagement.Domain.Common;
+
+namespace AccountManagement.Domain.IdentityHub
 {
-    public class User
+    public class ApplicationUser : BaseEntity
     {
 
         public string FirstName { get; set; }
@@ -15,7 +17,7 @@
         public string PhoneNumber { get; set; }
         public string SocialMediaHandle { get; set; }
         public MaritalStatus MaritalStatus { get; set; }
-        public List<User> FamilyMembers { get; set; }
+        public List<ApplicationUser> FamilyMembers { get; set; }
         public string BaptismLocation { get; set; }
         public Gender Gender { get; set; }
         public string Email { get; set; }
